@@ -56,3 +56,24 @@
   * 145 lowercase to uppercase
   * 37 reverse 3-digit integer
   * 9 fizz buzz
+### Lession 3: 线性数据结构 string, list, tuple & linkedlist
+* 字符串 String
+  * 可以使用单引号或者双引号, 在一份代码中保持统一 , eg: str1 = 'hello world!'
+  * 连接两个字符串 eg: print str1 + str2
+  * 如何给子串连接一个整数，或者一个实数？ -> str 函数: 其他任何类型的变量转变成为字符串; str()
+  * 字符串的长度计算 -> print len(str1)
+  * 访问字符串中的字符 -> print str1[6]; 通过name[index]的方式访问
+  * 遍历String中的每一个字符 -> 两种for循环方式，取决于是否需要index: 1 for c in str:    2 for idx in range(len(str)):
+  * 面试真题: String To Integer -> https://www.jiuzhang.com/solution/string-to-integer/
+  * 面试真题: Rotate String -> https://www.lintcode.com/problem/rotate-string/description
+  * 字符串在python里是不能修改的； eg：错误示范: str1[2] = 'c'
+  * str = 'jiuzhang'  print str[1:3] -> iu;   print str[1:] -> iuzhang;    print str[:5] -> jiuzh;    print str[:] -> jiuzhang;
+* List 列表
+  * Python的基本数据结构之一： eg: a = ['1', '2', '3']
+  * 列表的常见操作：加(array + array); 乘(array * 3 备份3遍）; 元素检测(eg: 3 in array -> return true or false)
+  * 列表的常见操作：加入元素（array.append()); 合并（array.extend(); eg: [1, 2, 3].extend([4, 5, 6]) -> [1, 2, 3, 4, 5, 6])
+  * 列表的常见操作：删除元素（del array[1]); 索引(eg: array[3]); 切片(eg: array[2:5] 不包含5这个位置)；反转（array【
+  
+  
+  
+  
