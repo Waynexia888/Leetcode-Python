@@ -175,6 +175,12 @@
   * 494 Implement Stack by Two Queues
   * 423 Valid Parentheses
   * 40 Implement Queue by Two Stacks
+### Lession 5: 树结构与递归  Tree & Recursion
+* Dict 字典 -> 相当于哈希表
+
+### Lession 6: 常用排序算法原理与应用  Principle and Application of Sorting Algorithm
+* Dict 字典 -> 相当于哈希表
+  
 
   
    
