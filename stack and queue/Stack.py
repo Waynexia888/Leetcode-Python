@@ -1,5 +1,6 @@
 # -*- coding:utf-8 -*-
-
+# 栈的操作
+# https://www.lintcode.com/problem/implement-stack/description
 class Stack: 
     """使用List模拟栈""" 
     def __init__(self): 
