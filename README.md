@@ -160,7 +160,7 @@
   * 2 并发： 由于生产者和消费者是两个不同的模块，对于生产者而言它负责生产数据，只要往缓存区中丢数据完成，就可以继续生产下一个数据，不会因为数据是否被消费而阻塞
   * 队列的应用：Message queue 消息队列； https://github.com/apache/kafka   ； https://github.com/rabbitmq/rabbitmq-server
   * 队列的应用：BFS 广度优先搜索
-* Dict -> 相当于哈希表
+* Dict 字典 -> 相当于哈希表
   * 生成一个dict有两种方法： 1 d = {} ; 2 d = dict()
   * 如何赋值？ d['a'] = 100 ; d['b'] = 200
   * print d['a'] -> 100;  print d['b'] -> 200;
