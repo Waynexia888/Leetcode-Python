@@ -1,5 +1,6 @@
 # Leetcode-Python
 ### Lession 1: Variable & Control flow
+* 基础语法： https://www.tutorialspoint.com/python3/python_lists.htm
 * Fizz Buzz
 * Reverse 3-digit Integer
 * int变量： a = 1， a = b = c = 1, a = b = c = 1, 100, "linpz"
@@ -110,6 +111,41 @@
   * LinkedList Class的接口：4 删除操作 remove(location) // 删除location位置上的元素
   * 面试真题: Reverse Linked List -> http://www.lintcode.com/en/problem/reverse-linked-list/
   * 面试真题: Remove Nth Node From End of List -> http://www.lintcode.com/en/problem/remove-nth-node-from-end-of-list/
+* lintcode 练习
+  * 483 Convert Linked List to Array List
+  * 225 Find Node in Linked List
+  * 219 Insert Node in Sorted Linked List
+  * 452 Remove Linked List Elements
+  * 241 String to Integer
+  * 415 Vaild Palindrome
+  * 174 Remove Nth Node from End of list
+  * 165 Merge Two Sorted Lists
+### Lession 4: 线性数据结构 Queue & Stack
+* 数据结构Recap
+  * 数据结构 = 数据 + 存储方式 + 操作
+  * 数据： 存储什么数据？ 如int， string类型
+  * 存储方式： 如何组织数据， 数据之间的关系？
+  * 操作： 如何快速的读取查询数据， 写入数据到数据结构中？
+  * 不要求数据的顺序， 维护成本低， 比如： list列表
+  * 要求数据的顺序，维护成本高，使用成本低， 比如： 排序的list
+* 栈 Stack
+  * 什么是栈（stack）： 栈是一种先进后出（last in first out，LIFO)的线性数据结构
+  * 栈的操作： push：放入一个元素； pop：弹出一个元素； top：获取栈顶元素； empty：判断栈是否为空
+  * 栈的实现 -> 使用基于list实现stack
+  * 面试真题： Implement Stack -> https://www.lintcode.com/en/problem/implement-stack/
+  * 面试真题： Valid Parentheses -> https://www.lintcode.com/en/problem/valid-parentheses/
+* Queue 队列
+  * 什么是队列（queue）：队列是一种先进先出（first in first out, FIFO)的线性数据结构。例如： 食堂里排队打饭， 过安检的时候排队
+  * Queue提供的接口方法：
+  * 1 Queue() 定义一个空队列，无参数，返回值是空队列
+  * 2 enqueue(item)在队列尾部加入一个数据项，参数是数据项，无返回值
+  * 3 dequeue()删除队列头部的数据项，不需要参数，返回值是被删除的数据，队列本身有变化
+  * 4 isEmpty()检测队列是否为空， 无参数，返回布尔值
+  * 5 size()返回队列数据项的数量，无参数，返回一个整数
+  * Queue模块中队列的提供的结构： put (enqueue)：元素进队列； get (dequeue)：元素出队列； empty： 判断队列是否为空
+  * 队列的实现： 1 使用ListNode实现Queue； 2 使用Queue模块
+  * 面试真题： Implement Queue by Linked List -> http://www.jiuzhang.com/solution/implement-queue-by-linked-list/
+  * Python提供的Queue模块：Python中队列是线程间最常用的交换数据的方式
   
   
    
