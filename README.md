@@ -119,6 +119,22 @@
   * 415 Vaild Palindrome
   * 174 Remove Nth Node from End of list
   * 165 Merge Two Sorted Lists
+### Lession 4: 线性数据结构 Queue & Stack
+* 数据结构Recap
+  * 数据结构 = 数据 + 存储方式 + 操作
+  * 数据： 存储什么数据？ 如int， string类型
+  * 存储方式： 如何组织数据， 数据之间的关系？
+  * 操作： 如何快速的读取查询数据， 写入数据到数据结构中？
+  * 不要求数据的顺序， 维护成本低， 比如： list列表
+  * 要求数据的顺序，维护成本高，使用成本低， 比如： 排序的list
+* 栈 Stack
+  * 什么是栈（stack）： 栈是一种先进后出（last in first out，LIFO)的线性数据结构
+  * 栈的操作： push：放入一个元素； pop：弹出一个元素； top：获取栈顶元素； empty：判断栈是否为空
+  * 栈的实现 -> 使用基于list实现stack
+  * 面试真题： Implement Stack -> https://www.lintcode.com/en/problem/implement-stack/
+  * 面试真题： Valid Parentheses -> https://www.lintcode.com/en/problem/valid-parentheses/
+* Queue 队列
+  * 
   
   
   
