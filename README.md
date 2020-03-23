@@ -1,5 +1,6 @@
 # Leetcode-Python
 ### Lession 1: Variable & Control flow
+* 基础语法： https://www.tutorialspoint.com/python3/python_lists.htm
 * Fizz Buzz
 * Reverse 3-digit Integer
 * int变量： a = 1， a = b = c = 1, a = b = c = 1, 100, "linpz"
@@ -134,8 +135,17 @@
   * 面试真题： Implement Stack -> https://www.lintcode.com/en/problem/implement-stack/
   * 面试真题： Valid Parentheses -> https://www.lintcode.com/en/problem/valid-parentheses/
 * Queue 队列
-  * 
-  
+  * 什么是队列（queue）：队列是一种先进先出（first in first out, FIFO)的线性数据结构。例如： 食堂里排队打饭， 过安检的时候排队
+  * Queue提供的接口方法：
+  * 1 Queue() 定义一个空队列，无参数，返回值是空队列
+  * 2 enqueue(item)在队列尾部加入一个数据项，参数是数据项，无返回值
+  * 3 dequeue()删除队列头部的数据项，不需要参数，返回值是被删除的数据，队列本身有变化
+  * 4 isEmpty()检测队列是否为空， 无参数，返回布尔值
+  * 5 size()返回队列数据项的数量，无参数，返回一个整数
+  * Queue模块中队列的提供的结构： put (enqueue)：元素进队列； get (dequeue)：元素出队列； empty： 判断队列是否为空
+  * 队列的实现： 1 使用ListNode实现Queue； 2 使用Queue模块
+  * 面试真题： Implement Queue by Linked List -> http://www.jiuzhang.com/solution/implement-queue-by-linked-list/
+  * Python提供的Queue模块：Python中队列是线程间最常用的交换数据的方式
   
   
    
