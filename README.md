@@ -110,6 +110,16 @@
   * LinkedList Class的接口：4 删除操作 remove(location) // 删除location位置上的元素
   * 面试真题: Reverse Linked List -> http://www.lintcode.com/en/problem/reverse-linked-list/
   * 面试真题: Remove Nth Node From End of List -> http://www.lintcode.com/en/problem/remove-nth-node-from-end-of-list/
+* lintcode 练习
+  * 483 Convert Linked List to Array List
+  * 225 Find Node in Linked List
+  * 219 Insert Node in Sorted Linked List
+  * 452 Remove Linked List Elements
+  * 241 String to Integer
+  * 415 Vaild Palindrome
+  * 174 Remove Nth Node from End of list
+  * 165 Merge Two Sorted Lists
+  
   
   
    
