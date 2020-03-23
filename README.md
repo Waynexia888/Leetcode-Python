@@ -145,9 +145,11 @@
   * Queue模块中队列的提供的结构： put (enqueue)：元素进队列； get (dequeue)：元素出队列； empty： 判断队列是否为空
   * 队列的实现： 1 使用ListNode实现Queue； 2 使用Queue模块
   * 面试真题： Implement Queue by Linked List -> http://www.jiuzhang.com/solution/implement-queue-by-linked-list/
-  * Python提供的Queue模块：Python中队列是线程间最常用的交换数据的方式
-  
-  
+  * Python提供的Queue模块：Python中队列是线程间最常用的交换数据的方式, 如下：
+  * import Queue
+  * queue = Queue.Queue(maxsize = 10)
+  * 注意：如果maxsize小于1就表示队列长度无限
+  * put 元素放入队列： queue.put(10) -> put()方法在队尾插入一个元素， 如果队列是满的，该线程会阻塞（等待），直到空出一个位置来，然后在队尾放入元素  
    
   
   
