@@ -211,7 +211,7 @@
   * 递归的定义：因为斐波那契数列满足F(n) = F(n - 1) + F(n - 2)
   * 递归的出口：n = 0 和 n = 1的时候，问题规模足够小的时候
   * 递归的拆解：return self.fibonacci(n - 1) + self.fibonacci(n - 2)
-* Coding: 打印出一个树的中序遍历
+* Coding: 打印出一个树的中序遍历 -> see attached files
 * 学习目标2:
   * 获取所有叶子节点的和 Get leaf sum
   * 获取树的高度 Get tree height
