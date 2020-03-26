@@ -160,11 +160,97 @@
   * 2 并发： 由于生产者和消费者是两个不同的模块，对于生产者而言它负责生产数据，只要往缓存区中丢数据完成，就可以继续生产下一个数据，不会因为数据是否被消费而阻塞
   * 队列的应用：Message queue 消息队列； https://github.com/apache/kafka   ； https://github.com/rabbitmq/rabbitmq-server
   * 队列的应用：BFS 广度优先搜索
+* Dict 字典 -> 相当于哈希表
+  * 生成一个dict有两种方法： 1 d = {} ; 2 d = dict()
+  * 如何赋值？ d['a'] = 100 ; d['b'] = 200
+  * print d['a'] -> 100;  print d['b'] -> 200;
+  * 检验key是否存在在dict里？  print 'a' in d
+  * 获取所有的keys： print d.keys()
+  * 获取所有的values： print d.values()
+  * 如何循环字典里的key， value？ -> for key, value in d.items():  print key, value
+  * 如何循环字典里的key？ -> for key in d.keys():  print key
+  * 如何循环字典里的value？  -> for value in d.values():  print value 
 * lintcode 练习
   * 495 Implement Stack
   * 494 Implement Stack by Two Queues
   * 423 Valid Parentheses
   * 40 Implement Queue by Two Stacks
+### Lession 5: 树结构与递归  Tree & Recursion
+* 树 Tree
+  * 由节点（node）组成, 每个节点有零个或多个子节点（child node）, 没有父节点的是根节点（root node）, 一棵树中，只有一个root node
+  * 每个非根节点只有一个父节点（parent node）, 没有任何子节点的节点叫叶子节点（leaf node）
+* 二叉树 Binary Tree
+  * 每个节点最多有两个子节点, 两个子节点分别被称为左孩子（left child）和右孩子（right child）, 叶子节点：没有孩子节点的节点
+  * 子树（sub-tree）: 树中的每个节点代表以它为根的一棵树, 左孩子所代表的树成为左子树（left sub-tree）, 右孩子所代表的树成为右子树（right sub-tree）
+  * 树结构，随处可见的数据结构: eg: 文件系统 B+树 ; 数据库的索引－第七节课; 字典树，平衡树等 - 高级数据结构
+  * 剖析LintCode TreeNode:
+  * class TreeNode:
+  *     def __init__(self, val):
+  *         self.val = val
+  *         self.left, self.right = None, None
+* 学习目标1:
+  * 构造一棵二叉树 Construct a binary tree
+  * 打印出这课二叉树 print a binary tree
+  * Coding & Print: 构造和打印二叉树. -> see attached files
+* 树（二叉树）的遍历 （Binary Tree Traversal）:
+  * 先序遍历（Preorder traversal）: 口诀：根左右
+  * 中序遍历（Inorder traversal）: 口诀：左根右.  https://zh.wikipedia.org/wiki/%E6%A0%91%E7%9A%84%E9%81%8D%E5%8E%86
+  * 后序遍历（Postorder traversal）: 口诀：左右根
+* 如何遍历一棵树？: 使用递归的方式!!
+* 程序实现一般有两种方式：
+  * 递归的实现方式
+  * 非递归的实现方式
+* 什么是递归 (Recursion)？
+  * 数据结构的递归 -> 树就是一种递归的数据结构
+  * 算法（程序）的递归 -> 函数自己调用自己
+* 递归三要素
+  * 递归的定义: 首先这个问题或者数据结构得是递归定义的
+  * 递归的出口: 什么时候递归终止
+  * 递归的拆解: 递归不终止的时候，如何分解问题
+* 经典例题: Fibonacci. -> http://www.lintcode.com/en/problem/fibonacci/
+  * 递归的定义：因为斐波那契数列满足F(n) = F(n - 1) + F(n - 2)
+  * 递归的出口：n = 0 和 n = 1的时候，问题规模足够小的时候
+  * 递归的拆解：return self.fibonacci(n - 1) + self.fibonacci(n - 2)
+* Coding: 打印出一个树的中序遍历 -> see attached files
+* 学习目标2:
+  * 获取所有叶子节点的和 Get leaf sum
+  * 获取树的高度 Get tree height
+  * 获取所有root到叶子节点的路径 Get root-to-leaf paths
+* Recursion 获取叶子节点的和
+  * 访问一个Node：1 如果这个Node是叶子节点，则sum就是他本身;
+  * 2 如果这个Node不是叶子节点，则sum等于左子树的叶子节点和 + 右子树之和
+  * 实战例题: Binary Tree Leaf Sum -> http://www.lintcode.com/en/problem/binary-tree-leaf-sum/
+* Recursion 获取树的高度
+  * 访问一个Node：1 如果这个Node是叶子节点，则高度是1
+  * 如果这个Node不是叶子节点，则高度等于 = max(左子树的高度, 右子树的高度) + 1
+  * 实战例题: Maximum Depth of Binary Tree -> http://www.lintcode.com/en/problem/maximum-depth-of-binary-tree/
+* Recursion 获取树中root到leaf的所有路径:
+  * 能否根据之前两个问题，我们来做同样的分析？
+  * 实战例题: Identical Binary Tree -> http://www.lintcode.com/en/problem/identical-binary-tree/
+  * 题目大意：判断两棵Tree是否同构，同构的定义是可以通过交换左右子树是的他们相同
+* Recursion 判断子树是否同构:
+  * 访问一个A树中的Node1, 和B树中的Node2：
+  * 1 如果这个Node1和Node2都是NULL，则同构
+  * 2 如果这个Node1和Node2都不是NULL，则同构的条件是: 1 Node1和Node2节点val相同; 2 Node1和Node2的left subtree同构且Node1和Node2的right subtree同构
+  * 3 他们不同构
+* LintCode 树的遍历问题:
+  * Binary Tree Preorder Traversal -> http://www.lintcode.com/en/problem/binary-tree-preorder-traversal/
+  * Binary Tree Inorder Traversal -> http://www.lintcode.com/en/problem/binary-tree-inorder-traversal/
+  * Binary Tree Postorder Traversal -> http://www.lintcode.com/en/problem/binary-tree-postorder-traversal/
+  * 更多Traversal的问题: ->  http://www.lintcode.com/en/tag/binary-tree-traversal/
+* lintcode 练习
+  * 376 Binary Tree Path Sum
+  * 482 Binary Tree Level Sum
+  * 481 Binary Tree Leaf Sum
+  * 480 Binary Tree Paths
+  * 97 Maximum Depth of Binary Tree
+
+  
+  
+
+### Lession 6: 常用排序算法原理与应用  Principle and Application of Sorting Algorithm
+* Dict 字典 -> 相当于哈希表
+  
 
   
    
