@@ -245,11 +245,25 @@
   * 480 Binary Tree Paths
   * 97 Maximum Depth of Binary Tree
 
-  
-  
-
 ### Lession 6: 常用排序算法原理与应用  Principle and Application of Sorting Algorithm
-* Dict 字典 -> 相当于哈希表
+* 本节重点
+  * 如何用分治法(Divide and Conquer)解决排序问题
+  * 如何分析分治算法的时间和空间复杂度
+  * 如何有效避免快速排序的最坏情况
+  * 归并排序 Merge Sort
+  * 快速排序 Quick Sort
+  * 在Python中使用排序
+* 自学内容，以下三种排序时间复杂度均为O(n^2):
+  * 选择排序 Selection Sort, 不是稳定的排序算法
+  * 插入排序 Insertion Sort, 稳定的排序算法
+  * 冒泡排序 Bubble Sort, 稳定的排序算法
+  * 演示界面：http://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html
+* 归并排序和快速排序 Merge sort & Quick sort
+  * Merge sort: 最坏时间复杂度O(nlogn), 稳定的排序算法
+  * 什么是稳定的排序算法：简单的来说，就是数组里有两个相同的数，那么不管排序前还是排序后，原来在前面的一定还是在前面。
+  * Quick sort: 均摊复杂度(亦或者是平均复杂度)O(nlogn), 不是稳定的排序算法
+* Merge Sort
+  * 
   
 
   
