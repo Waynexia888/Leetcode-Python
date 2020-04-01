@@ -57,6 +57,13 @@
   * 145 lowercase to uppercase
   * 37 reverse 3-digit integer
   * 9 fizz buzz
+### Lession 2: Function & Class
+* lintcode 练习
+  * 454 Rectangle Area
+  * 222 Setter and Getter
+  * 455 Student ID
+  * 218 Student Level
+  * 497 Shape Factory
 ### Lession 3: 线性数据结构 string, list, tuple & linkedlist
 * 字符串 String
   * 可以使用单引号或者双引号, 在一份代码中保持统一 , eg: str1 = 'hello world!'
@@ -97,7 +104,11 @@
   * 引用的赋值: node1 = ListNode(10); node2 = ListNode(20); -> 这里有两个对象, node1和node2是这两个对象的引用
   * 引用的好处与用处：1 引用也存的是数据，存的是指向这个对象的地址; 2 使得数据更加的整齐; 3 需要专递引用去修改数据
   * 什么是数据结构（data structure）? -> 数据: 存储数据的功能; 结构: 如何组织排列存储的数据; 操作: 如何查询，添加，删除维护存在的数据
-  * 什么是链表（linked list）? -> 由节点构成的列表, 线性的数据结构
+  * 什么是链表（linked list）? -> 由节点构成的列表, 线性的数据结构； 参考：https://blog.csdn.net/qq_39422642/article/details/78988976
+  * 链表的基本元素有：1 节点：每个节点有两个部分，左边部分称为值域，用来存放用户数据；右边部分称为指针域，用来存放指向下一个元素的指针.
+  * 2 head:head节点永远指向第一个节点
+  * 3 tail: tail永远指向最后一个节点
+  * 4 None:链表中最后一个节点的指针域为None值
   * class ListNode:
   *     def __init__(self, value):
   *         self.val = value
@@ -105,10 +116,10 @@
   * 基于ListNode实现一个Linked List:  see attached code above...
   * 不得不提的dummy Node：伟大的哨兵节点：dummyNode-> null; 作用（前驱节点的重要性）：使得每一个元素都有前驱节点
   * 链表的操作: 遍历（traverse）; 插入（insert）; 查找（find）; 删除（delete）
-  * LinkedList Class的接口：1 读取操作 get(location) // 获取location位置上的node的value
-  * LinkedList Class的接口：2 查找操作 contains(val) // 判断链表中是否含有val值的node
-  * LinkedList Class的接口：3 插入操作 add(location, val) // 在location的位置上插入一个值为val的node
-  * LinkedList Class的接口：4 删除操作 remove(location) // 删除location位置上的元素
+  * LinkedList Class的接口：1 读取操作 get(location) // 获取location位置上的node的value, Time Complexity: O(n)
+  * LinkedList Class的接口：2 查找操作 contains(val) // 判断链表中是否含有val值的node, Time Complexity: O(n)
+  * LinkedList Class的接口：3 插入操作 add(location, val) // 在location的位置上插入一个值为val的node, Time Complexity: O(1)
+  * LinkedList Class的接口：4 删除操作 remove(location) // 删除location位置上的元素, Time Complexity: O(n)
   * 面试真题: Reverse Linked List -> http://www.lintcode.com/en/problem/reverse-linked-list/
   * 面试真题: Remove Nth Node From End of List -> http://www.lintcode.com/en/problem/remove-nth-node-from-end-of-list/
 * lintcode 练习
@@ -244,12 +255,40 @@
   * 481 Binary Tree Leaf Sum
   * 480 Binary Tree Paths
   * 97 Maximum Depth of Binary Tree
-
-  
-  
-
+* lintcode 练习: Hash Table
+  * 647 Substring Anagrams
+  * 644 Mirror Numbers
+  * 557 Count Characters
+  * 487 Name Deduplication
 ### Lession 6: 常用排序算法原理与应用  Principle and Application of Sorting Algorithm
-* Dict 字典 -> 相当于哈希表
+* 本节重点
+  * 如何用分治法(Divide and Conquer)解决排序问题
+  * 如何分析分治算法的时间和空间复杂度
+  * 如何有效避免快速排序的最坏情况
+  * 归并排序 Merge Sort
+  * 快速排序 Quick Sort
+  * 在Python中使用排序
+* 自学内容，以下三种排序时间复杂度均为O(n^2):
+  * 选择排序 Selection Sort, 不是稳定的排序算法
+  * 插入排序 Insertion Sort, 稳定的排序算法
+  * 冒泡排序 Bubble Sort, 稳定的排序算法
+  * 演示界面：http://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html
+* 归并排序和快速排序 Merge sort & Quick sort
+  * Merge sort: 最坏时间复杂度O(nlogn), 稳定的排序算法
+  * 什么是稳定的排序算法：简单的来说，就是数组里有两个相同的数，那么不管排序前还是排序后，原来在前面的一定还是在前面。
+  * Quick sort: 均摊复杂度(亦或者是平均复杂度)O(nlogn), 不是稳定的排序算法
+* Merge Sort
+* lintcode 练习
+  * 463 Sort Integers
+  * 464 Sort Integers II
+  * 173 Insertion Sort List
+  * 184 Largest Number
+  * 148 Sort Colors
+  * 143 Sort Colors II
+  * 139 Subarray Sum Closest
+  * 98 Sort List
+  * 5 Kth Largest Element
+
   
 
   
