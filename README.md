@@ -112,10 +112,10 @@
   * 基于ListNode实现一个Linked List:  see attached code above...
   * 不得不提的dummy Node：伟大的哨兵节点：dummyNode-> null; 作用（前驱节点的重要性）：使得每一个元素都有前驱节点
   * 链表的操作: 遍历（traverse）; 插入（insert）; 查找（find）; 删除（delete）
-  * LinkedList Class的接口：1 读取操作 get(location) // 获取location位置上的node的value
-  * LinkedList Class的接口：2 查找操作 contains(val) // 判断链表中是否含有val值的node
-  * LinkedList Class的接口：3 插入操作 add(location, val) // 在location的位置上插入一个值为val的node
-  * LinkedList Class的接口：4 删除操作 remove(location) // 删除location位置上的元素
+  * LinkedList Class的接口：1 读取操作 get(location) // 获取location位置上的node的value, Time Complexity: O(n)
+  * LinkedList Class的接口：2 查找操作 contains(val) // 判断链表中是否含有val值的node, Time Complexity: O(n)
+  * LinkedList Class的接口：3 插入操作 add(location, val) // 在location的位置上插入一个值为val的node, Time Complexity: O(1)
+  * LinkedList Class的接口：4 删除操作 remove(location) // 删除location位置上的元素, Time Complexity: O(n)
   * 面试真题: Reverse Linked List -> http://www.lintcode.com/en/problem/reverse-linked-list/
   * 面试真题: Remove Nth Node From End of List -> http://www.lintcode.com/en/problem/remove-nth-node-from-end-of-list/
 * lintcode 练习
