@@ -12,7 +12,7 @@ class ListNode(object):
 
 class Solution:
     """
-    @param {ListNode} head the first node of the linked list.
+    @param {ListNode} head: the first node of the linked list.
     @return {int[]} an integer list
     """
 
@@ -24,4 +24,6 @@ class Solution:
             arrList.append(head.val)
             head = head.next
         return arrList
+
+
 
