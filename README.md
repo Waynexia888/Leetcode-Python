@@ -57,6 +57,13 @@
   * 145 lowercase to uppercase
   * 37 reverse 3-digit integer
   * 9 fizz buzz
+### Lession 2: Function & Class
+* lintcode 练习
+  * 454 Rectangle Area
+  * 222 Setter and Getter
+  * 455 Student ID
+  * 218 Student Level
+  * 497 Shape Factory
 ### Lession 3: 线性数据结构 string, list, tuple & linkedlist
 * 字符串 String
   * 可以使用单引号或者双引号, 在一份代码中保持统一 , eg: str1 = 'hello world!'
@@ -244,7 +251,11 @@
   * 481 Binary Tree Leaf Sum
   * 480 Binary Tree Paths
   * 97 Maximum Depth of Binary Tree
-
+* lintcode 练习: Hash Table
+  * 647 Substring Anagrams
+  * 644 Mirror Numbers
+  * 557 Count Characters
+  * 487 Name Deduplication
 ### Lession 6: 常用排序算法原理与应用  Principle and Application of Sorting Algorithm
 * 本节重点
   * 如何用分治法(Divide and Conquer)解决排序问题
@@ -263,7 +274,17 @@
   * 什么是稳定的排序算法：简单的来说，就是数组里有两个相同的数，那么不管排序前还是排序后，原来在前面的一定还是在前面。
   * Quick sort: 均摊复杂度(亦或者是平均复杂度)O(nlogn), 不是稳定的排序算法
 * Merge Sort
-  * 
+* lintcode 练习
+  * 463 Sort Integers
+  * 464 Sort Integers II
+  * 173 Insertion Sort List
+  * 184 Largest Number
+  * 148 Sort Colors
+  * 143 Sort Colors II
+  * 139 Subarray Sum Closest
+  * 98 Sort List
+  * 5 Kth Largest Element
+
   
 
   
