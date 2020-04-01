@@ -1,4 +1,5 @@
 # Leetcode-Python
+* 参考官方文档： https://docs.python.org/3/tutorial/controlflow.html
 ### Lession 1: Variable & Control flow
 * 基础语法： https://www.tutorialspoint.com/python3/python_lists.htm
 * Fizz Buzz
@@ -50,6 +51,9 @@
   *     if i == 5:
   *         break
   *     print i     (the answer is : 0, 1, 2, 3, 4)
+* if else 循环语句：
+  * 参考： https://docs.python.org/3/tutorial/controlflow.html
+  * if -> elif -> else
 * lintcode 练习
   * 479 second max of array
   * 478 simple calculator
