@@ -119,6 +119,7 @@
   *         self.next = None
   * 基于ListNode实现一个Linked List:  see attached code above...
   * 不得不提的dummy Node：伟大的哨兵节点：dummyNode-> null; 作用（前驱节点的重要性）：使得每一个元素都有前驱节点
+  * 哨兵节点,也是头结点,是一个 dummy node. 可以用来简化边界条件. 是一个附加的链表节点.该节点作为第一个节点,它的值域不存储任何东西. 只是为了操作的方便而引入的. 如果一个链表有哨兵节点的话,那么线性表的第一个元素应该是链表的第二个节点.
   * 链表的操作: 遍历（traverse）; 插入（insert）; 查找（find）; 删除（delete）
   * LinkedList Class的接口：1 读取操作 get(location) // 获取location位置上的node的value, Time Complexity: O(n)
   * LinkedList Class的接口：2 查找操作 contains(val) // 判断链表中是否含有val值的node, Time Complexity: O(n)
@@ -135,6 +136,9 @@
   * 415 Vaild Palindrome
   * 174 Remove Nth Node from End of list
   * 165 Merge Two Sorted Lists
+* leetcode 总结面试题：
+  * https://www.jianshu.com/p/490cb181946f
+  * https://zhuanlan.zhihu.com/p/62242201
 ### Lession 4: 线性数据结构 Queue & Stack
 * 数据结构Recap
   * 数据结构 = 数据 + 存储方式 + 操作
