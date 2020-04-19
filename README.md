@@ -87,6 +87,7 @@
   * 列表的常见操作：删除元素（del array[1]); 索引(eg: array[3]); 切片(eg: array[2:5] 不包含5这个位置)；反转（array[5:2:-1])
   * 列表的常见操作：求list的最大，最小值 (max(); min()); pop 操作 (b = [1, 2, 3], print b.pop(1) -> 2)
   * 面试真题: Remove Element     (http://www.lintcode.com/en/problem/remove-element/)
+  * 如何把一个整数变成一个list？ eg: n = 19, print(list(str(n))) -> ['1', '9']
 * Tuple 元祖
   * 提问：为什么我们需要tuple？ (元祖tuple的存在是 为了优化我们的list，因为list消耗内存太大了，然后list的数据是可变的，导致list一定不能作为hash的key。 然而tuple里的数据是不可以修改的，节省内存空间的问题，并且解决了可以hash的问题）
   * Tuple 元组的创建： 使用小括号扩起来的， eg：tup1 = （'hello', 'jiuzhang', 5)
