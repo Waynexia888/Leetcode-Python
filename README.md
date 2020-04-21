@@ -358,6 +358,17 @@
   * Convert Binary Tree to Linked Lists by Depth
   * http://www.lintcode.com/en/problem/convert-binary-tree-to-linked-lists-by-depth/
   * http://www.jiuzhang.com/solutions/convert-binary-tree-to-linked-lists-by-depth/
+* 图上的宽度优先搜索, BFS in Graph; 问：和树上有什么区别？
+* 哈希表: 图中存在环, 存在环意味着，同一个节点可能重复进入队列; Java: HashMap / HashSet; C++: unordered_map / unordered_set; Python: dict / set
+  * Clone Graph (F); 图的遍历（由点及面）
+  * http://www.lintcode.com/problem/clone-graph/
+  * http://www.jiuzhang.com/solutions/clone-graph/
+  * BFS 的时间复杂度; O(N + M); 其中 N 为点数，M 为边数
+  * Word Ladder; 最典型的BFS问题 —— 隐式图 (Implicit Graph) 最短路径
+  * http://www.lintcode.com/problem/word-ladder/
+  * http://www.jiuzhang.com/solution/word-ladder/
+* 
+
 
    
   
