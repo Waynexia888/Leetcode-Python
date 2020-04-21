@@ -444,5 +444,15 @@
   * http://www.jiuzhang.com/tutorial/algorithm/367
   * 另外两种宽度优先搜索算法的实现方式
   * 双向宽度优先搜索算法（Bidirecitonal BFS）
-  
+* lintcode 练习
+  * 433 Number of Islands
+  * 69 Binary Tree Level Order Traversal
+  * 615 Course Schedule
+  * 616 Course Schedule II
+  * 611 Knight Shortest Path
+  * 605 Sequence Reconstruction
+  * 137 Clone Graph
+  * 127 Topological Sorting
+  * 7 Serialize and Deserialize Binary Tree
+  * 120 Word Ladder
   
