@@ -359,8 +359,12 @@
   * http://www.lintcode.com/en/problem/convert-binary-tree-to-linked-lists-by-depth/
   * http://www.jiuzhang.com/solutions/convert-binary-tree-to-linked-lists-by-depth/
 * 图上的宽度优先搜索, BFS in Graph; 问：和树上有什么区别？
-* 哈希表: 图中存在环, 存在环意味着，同一个节点可能重复进入队列; Java: HashMap / HashSet; C++: unordered_map / unordered_set; Python: dict / set
-  * Clone Graph (F); 图的遍历（由点及面）
+* 哈希表: 图中存在环, 存在环意味着，同一个节点可能重复进入队列; Java: HashMap / HashSet; C++: unordered_map / unordered_set; Python: dict / set; 【dict 是有key，value的， value是可以重复的， key是不能重复的】
+* clone 相当于 Deep Copy or Hard Copy, reference相当于Soft Copy
+  * reference：a = [1, 2, 3](a里存储的是[1, 2, 3]的内存地址）, b = a (soft copy， 复制了内存地址), a[1] = 100, print(b[1]) => 100
+  * a = 1 (a里存储的是value 1, 因为1 是int，是基本数据类型）, b = a (b = 1)
+  * a = [1, 2, 3], b = a.copy() (相当于hard copy）
+* Clone Graph (F); 图的遍历（由点及面）
   * http://www.lintcode.com/problem/clone-graph/
   * http://www.jiuzhang.com/solutions/clone-graph/
   * BFS 的时间复杂度; O(N + M); 其中 N 为点数，M 为边数
