@@ -367,10 +367,32 @@
   * Word Ladder; 最典型的BFS问题 —— 隐式图 (Implicit Graph) 最短路径
   * http://www.lintcode.com/problem/word-ladder/
   * http://www.jiuzhang.com/solution/word-ladder/
-* 
-
-
-   
-  
+* 矩阵中的宽度优先搜索, BFS in Matrix
+* 矩阵 vs 图
+  * 图 Graph, N个点，M条边, M最大是 O(N^2) 的级别, 图上BFS时间复杂度 = O(N + M); 说是O(M)问题也不大，因为M一般都比N大; 所以最坏情况可能是 O(N^2)
+  * 矩阵 Matrix, R行C列, R*C个点，R*C*2 条边（每个点上下左右4条边，每条边被2个点共享）; 矩阵中BFS时间复杂度 = O(R * C)
+* Number of Islands
+  * http://www.lintcode.com/problem/number-of-islands/
+  * http://www.jiuzhang.com/solutions/number-of-islands/
+  * 图的遍历（由点及面）
+* 坐标变换数组
+  * int[] deltaX = {1,0,0,-1};
+  * int[] deltaY = {0,1,-1,0};
+  * 问：写出八个方向的坐标变换数组？
+* 更多 Union Find 有关的问题, 将在《九章算法强化班》中讲解, 并查集 Union Find
+* Knight Shortest Path
+  * http://www.lintcode.com/problem/knight-shortest-path/
+  * http://www.jiuzhang.com/solutions/knight-shortest-path/
+  * 简单图最短路径
+  * follow up: speed up?（见随课教程）
+* 拓扑排序 Topological Sorting; 几乎每个公司都有一道拓扑排序的面试题！ BFS or DFS?
+  * 独孤九剑——破剑式: 能够用 BFS 解决的问题，一定不要用 DFS 去做！因为用 Recursion 实现的 DFS 可能造成 StackOverflow! (Iteration 的 DFS 一来你不会写，二来面试官也看不懂)
+  * 入度（In-degree）： 有向图（Directed Graph）中指向当前节点的点的个数（或指向当前节点的边的条数）
+  * 算法描述：
+  * 1. 统计每个点的入度
+  * 2. 将每个入度为 0 的点放入队列（Queue）中作为起始节点
+  * 3. 不断从队列中拿出一个点，去掉这个点的所有连边（指向其他点的边），其他点的相应的入度 - 1
+  * 4. 一旦发现新的入度为 0 的点，丢回队列中
+  * 拓扑排序并不是传统的排序算法; 一个图可能存在多个拓扑序（Topological Order），也可能不存在任何拓扑序
   
   
