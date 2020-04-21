@@ -297,10 +297,68 @@
   * 139 Subarray Sum Closest
   * 98 Sort List
   * 5 Kth Largest Element
+### Lession 8: 性价比之王的宽度优先搜索 Breadth First Search
+* 先修内容
+  * 请在随课教程中先修如下内容：http://www.jiuzhang.com/tutorial/algorithm/14
+  * 什么是队列，如何自己实现一个队列
+  * 什么是 Interface，LinkedList 和 Queue 之间的关系是什么？ Java 才需要学习，Python和C++可以直接跳过（爽不爽！）
+  * 什么是拓扑排序 Topological Sorting
+  * 如何定义一个图的数据结构
+* 大纲 Outline
+  * 宽度优先搜索算法是一个性价比极高的算法, 如果你只有很短的时间准备面试（比如一周），那么你应该把时间花在宽度优先搜索上
+  * 什么时候使用 BFS
+  * 二叉树上的 BFS
+  * 图上的 BFS
+  * 矩阵上的 BFS
+  * 拓扑排序 Topological Sorting
+* 什么时候应该使用BFS？
+  * 图的遍历 Traversal in Graph: 1 层级遍历 Level Order Traversal 2 由点及面 Connected Component 3 拓扑排序 Topological Sorting
+  * 最短路径 Shortest Path in Simple Graph: 仅限简单图求最短路径, 即，图中每条边长度都是1，或者边长都相等
+  * 非递归的方式找所有方案 Iteration solution for all possible results(这一点我们将在后面 DFS 的课上提到)
+* 如果题目问最短路径, 除了BFS还可能是什么算法？(动态规划DP), 如果问最长路径呢？
+* 题型与算法的对应关系
+  * 最短路径: 简单图 → BFS, 复杂图 → Dijkstra, SPFA, Floyd（一般面试不考这个）
+  * 最长路径: 图可以分层 → Dynamic Programming, 分层：比如走到第i一定会经过第 i-1 层（棋盘格子图是典型的例子）; 不可以分层 → DFS
+* 二叉树上的宽度优先搜索 BFS in Binary Tree
+  * Binary Tree Level Order Traversal, 图的遍历（层级遍历）, 注：树是图的一种特殊形态，树属于图
+  * http://www.lintcode.com/problem/binary-tree-level-order-traversal/
+  * http://www.jiuzhang.com/solutions/binary-tree-level-order-traversal/
+* 宽搜要点 BFS Key Points
+  * 使用队列作为主要的数据结构 Queue; 思考：用栈（Stack）是否可行？为什么行 or 为什么不行？
+  * 是否需要实现分层？ 需要分层的算法比不需要分层的算法多一个循环
+  * Java / C++: size=queue.size(); 如果直接 for (int i = 0; i < queue.size(); i++) 会怎么样？ 问：为什么 Python 可以直接写 for i in range(len(queue)) ？
+* Binary Tree Serialization (M+Y); 问：什么是序列化？
+  * 将“内存”中结构化的数据变成“字符串”的过程
+  * 序列化：object to string
+  * 反序列化：string to object
+* 什么时候需要序列化？
+  * 将内存中的数据持久化存储时; 内存中重要的数据不能只是呆在内存里，这样断电就没有了，所需需要用一种方式写入硬盘，在需要
+的时候，能否再从硬盘中读出来在内存中重新创建
+  * 网络传输时; 机器与机器之间交换数据的时候，不可能互相去读对方的内存。只能讲数据变成字符流数据（字符串）后通过网络传输过去。接受的一方再将字符串解析后到内存中。
+  * 常用的一些序列化手段：XML, Json, Thrift (by Facebook), ProtoBuf (by Google)
+* 序列化算法
+  * 一些序列化的例子：
+  * 比如一个数组，里面都是整数，我们可以简单的序列化为”[1,2,3]”
+  * 一个整数链表，我们可以序列化为，”1->2->3”
+  * 一个哈希表(HashMap)，我们可以序列化为，”{\”key\”: \”value\”}”
+  * 序列化算法设计时需要考虑的因素：
+  * 压缩率。对于网络传输和磁盘存储而言，当然希望更节省。如 Thrift, ProtoBuf 都是为了更快的传输数据和节省存储空间而设计的。
+  * 可读性。我们希望开发人员，能够通过序列化后的数据直接看懂原始数据是什么。如 Json，LintCode 的输入数据
+* 二叉树如何序列化？
+  * 你可以使用任何你想要用的方法进行序列化，只要保证能够解析回来即可。LintCode 采用的是 BFS 的方式对二叉树数据进行序列化，这样的好处是，你可以更为容易的自己画出整棵二叉树。
+  * 算法描述：http://www.lintcode.com/en/help/binary-tree-representation/
+  * 题目及解答：http://www.lintcode.com/en/problem/binary-tree-serialization/ ; http://www.jiuzhang.com/solutions/binary-tree-serialization/
+* 相关问题 Related Problems
+  * Binary Tree Level Order Traversal II
+  * http://www.lintcode.com/en/problem/binary-tree-level-order-traversal-ii/
+  * http://www.jiuzhang.com/solutions/binary-tree-level-order-traversal-ii/
+  * Binary Tree Zigzag Order Traversal
+  * http://www.lintcode.com/en/problem/binary-tree-zigzag-level-order-traversal/
+  * http://www.jiuzhang.com/solutions/binary-tree-zigzag-level-order-traversal/
+  * Convert Binary Tree to Linked Lists by Depth
+  * http://www.lintcode.com/en/problem/convert-binary-tree-to-linked-lists-by-depth/
+  * http://www.jiuzhang.com/solutions/convert-binary-tree-to-linked-lists-by-depth/
 
-  
-
-  
    
   
   
