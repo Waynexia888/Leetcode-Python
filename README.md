@@ -365,6 +365,8 @@
   * a = 1 (a里存储的是value 1, 因为1 是int，是基本数据类型）, b = a (b = 1)
   * a = [1, 2, 3], b = a.copy() (相当于hard copy）
 * Clone Graph (F); 图的遍历（由点及面）
+  * 克隆图，相当于hard copy， 当我对克隆出来的图进行任何操作时，不会影响之前的那个图
+  * 做法： 1 找到所有的点； 2 复制所有的点； 3 复制所有的边
   * http://www.lintcode.com/problem/clone-graph/
   * http://www.jiuzhang.com/solutions/clone-graph/
   * BFS 的时间复杂度; O(N + M); 其中 N 为点数，M 为边数
