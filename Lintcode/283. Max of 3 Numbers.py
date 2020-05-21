@@ -10,11 +10,10 @@ class Solution:
         # python中max() 内置函数
         # return max(num1, num2, num3)
 
-        # 打擂台方法
-        maxNUmber = num1
-        if num2 > num1 and num2 > num3:
-            maxNUmber = num2
-        elif num3 > num1 and num3 > num2:
-            maxNUmber = num3
-
-        return maxNUmber
+       if num1 > num2 and num1 > num3:
+            return num1
+        elif num2 > num1 and num2 > num3:
+            return num2
+        else:
+            return num3
+ 
