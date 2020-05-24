@@ -9,8 +9,8 @@ class Solution:
         # 同向双指针问题
         # 首先声明一个滑动窗口。
         # 不断调整左右边界，使的l,r区间中的值一直约束内，并更新在约束范围内的指定值。
-
-        if not nums or len(nums) < 2:
+        # 时间复杂度O(n), 空间复杂度O(1)
+        if not nums or len(nums) < 1:
             return -1
 
         left, right = 0, -1  # nums[left...right]为我们的滑动窗口
