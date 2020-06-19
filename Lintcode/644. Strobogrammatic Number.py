@@ -11,7 +11,7 @@ class Solution:
 
         left, right = 0, len(num) - 1
         while left <= right:
-            if not num[left] in dict or dict[num[left]] != num[right]:
+            if num[left] not in dict or dict[num[left]] != num[right]:
                 return False
             left += 1
             right -= 1
