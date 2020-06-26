@@ -7,7 +7,7 @@ class Solution:
     def permuteUnique(self, nums):
         # write your code here
         results = []
-        if nums is None:
+        if not nums or len(nums) == 0:
             return [results]
         nums = sorted(nums)
         isUsed = [False] * len(nums)
